@@ -5,6 +5,7 @@ import com.nanookmod.registry.ModEffects;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
+import net.minecraft.world.phys.Vec3;
 import net.minecraftforge.event.entity.living.LivingEvent;
 import net.minecraftforge.event.entity.player.AttackEntityEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
@@ -19,9 +20,15 @@ import net.minecraftforge.fml.common.Mod;
  *    velocidad en 0 ya lo inmoviliza, pero sin esto igual podría pegar
  *    parado en el sitio.
  *
- * 2) No puede saltar -- LivingJumpEvent ya dispara el salto ANTES de que
- *    podamos cancelarlo (no es cancelable), así que en vez de eso le
- *    anulamos la velocidad vertical que el salto le acaba de dar.
+ * 2) No puede saltar NI avanzar por inercia -- LivingJumpEvent ya dispara
+ *    el salto ANTES de que podamos cancelarlo (no es cancelable), así que en
+ *    vez de eso le anulamos TODA la velocidad (vertical y horizontal) que el
+ *    salto le acaba de dar: si solo cortáramos la Y, el jugador heredaría el
+ *    impulso del avance y podría "surfear" el stun saltando en diagonal,
+ *    porque en el aire el atributo de velocidad a 0 no frena la inercia.
+ *    Además, cada tick se recorta a 0 cualquier velocidad horizontal que el
+ *    stuneado acumule por otras vías (empujones, agua...), dejando intacta
+ *    la vertical para no romper la caída libre.
  *
  * 3) No puede usar items -- en vez de escuchar cada evento de interacción
  *    por separado (RightClickItem, RightClickBlock, UseItem...), cada
@@ -39,12 +46,28 @@ public class StunEffectHandler {
 
     private static final int ITEM_COOLDOWN_TICKS = 2;
 
+    // Por debajo de esto la velocidad horizontal es simplemente fracción de
+    // bloque residual (deslizamiento al parar, agua...) y no merece un write.
+    private static final double HORIZONTAL_EPSILON = 1.0E-4;
+
     @SubscribeEvent
     public static void onLivingTick(LivingEvent.LivingTickEvent event) {
         LivingEntity entity = event.getEntity();
         if (entity.level().isClientSide() || !entity.hasEffect(ModEffects.STUN.get())) {
             return;
         }
+
+        // Red de seguridad: si por cualquier vía (ímpetu heredado del salto,
+        // empujones, corrientes de agua...) el stuneado acumula velocidad
+        // horizontal, se la recortamos a 0. La vertical NO se toca para no
+        // romper la caída libre ni el daño por caída. Va antes del gate de
+        // Player porque aplica a cualquier LivingEntity.
+        Vec3 delta = entity.getDeltaMovement();
+        double horiz = Math.sqrt(delta.x * delta.x + delta.z * delta.z);
+        if (horiz > HORIZONTAL_EPSILON) {
+            entity.setDeltaMovement(new Vec3(0, delta.y, 0));
+        }
+
         if (!(entity instanceof Player player)) {
             return;
         }
@@ -72,7 +95,11 @@ public class StunEffectHandler {
     public static void onJump(LivingEvent.LivingJumpEvent event) {
         LivingEntity entity = event.getEntity();
         if (entity.hasEffect(ModEffects.STUN.get())) {
-            entity.setDeltaMovement(entity.getDeltaMovement().multiply(1, 0, 1));
+            // Anulamos TAMBIÉN la horizontal, no solo la vertical: el salto
+            // hereda el impulso que llevaba el jugador por ir avanzando, y si
+            // solo cortáramos la Y, podría "surfear" el stun saltando en
+            // diagonal (en el aire MULTIPLY_TOTAL no frena la inercia).
+            entity.setDeltaMovement(Vec3.ZERO);
         }
     }
 }
