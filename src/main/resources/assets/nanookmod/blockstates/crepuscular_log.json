@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "nanookmod:block/crepuscular_log",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "nanookmod:block/crepuscular_log"
+    },
+    "axis=z": {
+      "model": "nanookmod:block/crepuscular_log",
+      "x": 90
+    }
+  }
+}

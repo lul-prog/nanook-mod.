@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "group": "wooden_fence",
+  "pattern": [
+    "W#W",
+    "W#W"
+  ],
+  "key": {
+    "#": { "item": "minecraft:stick" },
+    "W": { "item": "nanookmod:crepuscular_planks" }
+  },
+  "result": {
+    "item": "nanookmod:crepuscular_fence",
+    "count": 3
+  }
+}

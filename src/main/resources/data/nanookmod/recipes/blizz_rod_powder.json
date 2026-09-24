@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "nanookmod:blizz_rod"
+    }
+  ],
+  "result": {
+    "item": "nanookmod:blizz_rod_powder",
+    "count": 2
+  }
+}

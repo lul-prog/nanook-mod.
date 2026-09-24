@@ -1,0 +1,7 @@
+{
+  "feature": "nanookmod:scatter_crepuscular_grass",
+  "placement": [
+    { "type": "minecraft:count", "count": 85 },
+    { "type": "minecraft:in_square" }
+  ]
+}

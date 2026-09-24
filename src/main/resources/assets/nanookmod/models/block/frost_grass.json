@@ -1,0 +1,10 @@
+{
+  "parent": "block/grass_block",
+  "textures": {
+    "particle": "nanookmod:block/frost_dirt",
+    "bottom": "nanookmod:block/frost_dirt",
+    "top": "nanookmod:block/frost_grass_top",
+    "side": "nanookmod:block/frost_grass_side",
+    "overlay": "nanookmod:block/frost_grass_side"
+  }
+}

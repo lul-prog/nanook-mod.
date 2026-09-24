@@ -1,0 +1,81 @@
+{
+  "format_version": "1.12.0",
+  "minecraft:geometry": [
+    {
+      "description": {
+        "identifier": "geometry.twilight_portal_swirl_middle",
+        "texture_width": 256,
+        "texture_height": 256,
+        "visible_bounds_width": 11.75,
+        "visible_bounds_height": 11.75,
+        "visible_bounds_offset": [
+          0,
+          1,
+          0
+        ]
+      },
+      "bones": [
+        {
+          "name": "twilight_portal_swirl_middle",
+          "pivot": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "name": "group",
+          "parent": "twilight_portal_swirl_middle",
+          "pivot": [
+            0,
+            0,
+            0
+          ],
+          "cubes": [
+            {
+              "origin": [
+                -84,
+                -82,
+                -4
+              ],
+              "size": [
+                168,
+                168,
+                0
+              ],
+              "pivot": [
+                0,
+                2,
+                -4
+              ],
+              "uv": {
+                "north": {
+                  "uv": [
+                    0,
+                    0
+                  ],
+                  "uv_size": [
+                    256,
+                    256
+                  ],
+                  "uv_rotation": 90
+                },
+                "south": {
+                  "uv": [
+                    256,
+                    0
+                  ],
+                  "uv_size": [
+                    -256,
+                    256
+                  ],
+                  "uv_rotation": 270
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

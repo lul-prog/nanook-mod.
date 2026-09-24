@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "redstone",
+  "group": "wooden_button",
+  "ingredients": [
+    { "item": "nanookmod:crepuscular_planks" }
+  ],
+  "result": {
+    "item": "nanookmod:crepuscular_button",
+    "count": 1
+  }
+}

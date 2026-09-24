@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": { "model": "nanookmod:block/frost_brewing_stand" },
+    "facing=east":  { "model": "nanookmod:block/frost_brewing_stand", "y": 90 },
+    "facing=south": { "model": "nanookmod:block/frost_brewing_stand", "y": 180 },
+    "facing=west":  { "model": "nanookmod:block/frost_brewing_stand", "y": 270 }
+  }
+}

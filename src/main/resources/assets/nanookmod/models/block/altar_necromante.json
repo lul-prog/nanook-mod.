@@ -1,0 +1,6 @@
+{
+  "parent": "nanookmod:block/altar_necromante_model",
+  "textures": {
+    "particle": "nanookmod:block/altar_necromante"
+  }
+}

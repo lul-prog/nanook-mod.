@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "fuel_state=0": {
+      "model": "nanookmod:block/frost_lantern_off"
+    },
+    "fuel_state=1": {
+      "model": "nanookmod:block/frost_lantern_low"
+    },
+    "fuel_state=2": {
+      "model": "nanookmod:block/frost_lantern_on"
+    }
+  }
+}

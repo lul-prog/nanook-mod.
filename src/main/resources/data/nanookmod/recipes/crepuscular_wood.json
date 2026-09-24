@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "wood",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "nanookmod:crepuscular_log"
+    }
+  },
+  "result": {
+    "item": "nanookmod:crepuscular_wood",
+    "count": 3
+  }
+}

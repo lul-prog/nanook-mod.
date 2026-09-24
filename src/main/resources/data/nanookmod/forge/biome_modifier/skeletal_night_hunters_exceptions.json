@@ -1,0 +1,11 @@
+{
+  "type": "forge:remove_spawns",
+  "biomes": [
+    "minecraft:mushroom_fields",
+    "nanookmod:mar_primigenio"
+  ],
+  "entity_types": [
+    "nanookmod:skeletal_warrior",
+    "nanookmod:skeletal_mage"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "nanookmod:block/crepuscular_slab"
+    },
+    "type=top": {
+      "model": "nanookmod:block/crepuscular_slab_top"
+    },
+    "type=double": {
+      "model": "nanookmod:block/crepuscular_planks"
+    }
+  }
+}

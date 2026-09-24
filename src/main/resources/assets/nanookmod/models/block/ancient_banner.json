@@ -1,0 +1,7 @@
+{
+  "parent": "nanookmod:block/ancient_banner_model",
+  "textures": {
+    "particle": "nanookmod:block/ancient_banner"
+  },
+  "ambientocclusion": false
+}

@@ -1,0 +1,7 @@
+{
+  "feature": "nanookmod:patch_snowy_double_plant_fern",
+  "placement": [
+    { "type": "minecraft:rarity_filter", "chance": 25 },
+    { "type": "minecraft:in_square" }
+  ]
+}

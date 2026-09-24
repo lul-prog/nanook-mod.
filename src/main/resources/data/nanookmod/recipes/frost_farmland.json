@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "S",
+    "I"
+  ],
+  "key": {
+    "S": {
+      "item": "minecraft:snow"
+    },
+    "I": {
+      "item": "nanookmod:frost_ice"
+    }
+  },
+  "result": {
+    "item": "nanookmod:frost_farmland",
+    "count": 1
+  }
+}

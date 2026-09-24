@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:random_selector",
+  "config": {
+    "features": [
+      {
+        "feature": "nanookmod:twisted_spruce_custom_tall",
+        "chance": 0.08
+      },
+      {
+        "feature": "nanookmod:twisted_spruce_custom_medium",
+        "chance": 0.35
+      }
+    ],
+    "default": "nanookmod:twisted_spruce_custom_small"
+  }
+}

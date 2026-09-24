@@ -1,0 +1,99 @@
+{
+  "necrotic_scythe_slash": {
+    "sounds": ["nanookmod:necrotic_scythe/slash"]
+  },
+  "necrotic_scythe_spin_slash": {
+    "sounds": ["nanookmod:necrotic_scythe/spin_slash"]
+  },
+  "necrotic_scythe_rupture": {
+    "sounds": ["nanookmod:necrotic_scythe/rupture_quick"]
+  },
+  "necrotic_scythe_hit_impact": {
+    "sounds": ["nanookmod:necrotic_scythe/hit_impact_thud"]
+  },
+  "ambient.bosque_crepuscular.wind": {
+    "subtitle": "subtitles.nanookmod.ambient.wind",
+    "sounds": [{"name": "nanookmod:ambient/bosque_crepuscular/wind_strong", "stream": true}]
+  },
+  "ambient.bosque_crepuscular.crow": {
+    "subtitle": "subtitles.nanookmod.ambient.crow",
+    "sounds": ["nanookmod:ambient/bosque_crepuscular/crow"]
+  },
+  "ambient.bosque_crepuscular.branch_creak": {
+    "subtitle": "subtitles.nanookmod.ambient.branch_creak",
+    "sounds": ["nanookmod:ambient/bosque_crepuscular/branch_creak"]
+  },
+  "ambient.bosque_crepuscular.whispers": {
+    "subtitle": "subtitles.nanookmod.ambient.whispers",
+    "sounds": ["nanookmod:ambient/bosque_crepuscular/whispers"]
+  },
+  "ambient.bosque_crepuscular.chains": {
+    "subtitle": "subtitles.nanookmod.ambient.chains",
+    "sounds": ["nanookmod:ambient/bosque_crepuscular/chains"]
+  },
+  "ambient.mar_primigenio.wind": {
+    "subtitle": "subtitles.nanookmod.ambient.wind",
+    "sounds": [{"name": "nanookmod:ambient/mar_primigenio/wind_snow", "stream": true}]
+  },
+  "entity.crow.notice": {
+    "subtitle": "subtitles.nanookmod.entity.crow.notice",
+    "sounds": ["nanookmod:entity/crow/notice"]
+  },
+  "necrotic_knight_theme": {
+    "subtitle": "subtitles.nanookmod.music.necrotic_knight",
+    "sounds": [{"name": "nanookmod:music/necrotic_knight_theme", "stream": true}]
+  },
+  "nanook_theme": {
+    "sounds": [{"name": "nanookmod:music/throne_of_permafrost", "stream": true}]
+  },
+  "entity.necroknight.spawn": {
+    "subtitle": "subtitles.nanookmod.entity.necroknight.spawn",
+    "sounds": ["nanookmod:entity/necroknight/spawn"]
+  },
+  "entity.necroknight.idle": {
+    "subtitle": "subtitles.nanookmod.entity.necroknight.idle",
+    "sounds": ["nanookmod:entity/necroknight/idle"]
+  },
+  "entity.necroknight.hurt": {
+    "subtitle": "subtitles.nanookmod.entity.necroknight.hurt",
+    "sounds": [
+      "nanookmod:entity/necroknight/hurt_1",
+      "nanookmod:entity/necroknight/hurt_2",
+      "nanookmod:entity/necroknight/hurt_3"
+    ]
+  },
+  "entity.necroknight.death": {
+    "subtitle": "subtitles.nanookmod.entity.necroknight.death",
+    "sounds": [
+      "nanookmod:entity/necroknight/death_1",
+      "nanookmod:entity/necroknight/death_2",
+      "nanookmod:entity/necroknight/death_3"
+    ]
+  },
+  "entity.necroknight.sweep_attack": {
+    "subtitle": "subtitles.nanookmod.entity.necroknight.sweep_attack",
+    "sounds": [
+      "nanookmod:entity/necroknight/sweep_attack_1",
+      "nanookmod:entity/necroknight/sweep_attack_2",
+      "nanookmod:entity/necroknight/sweep_attack_3"
+    ]
+  },
+  "entity.necroknight.lightning_windup": {
+    "subtitle": "subtitles.nanookmod.entity.necroknight.lightning_windup",
+    "sounds": [
+      "nanookmod:entity/necroknight/lightning_windup_1",
+      "nanookmod:entity/necroknight/lightning_windup_2"
+    ]
+  },
+  "entity.necroknight.lightning_beam": {
+    "subtitle": "subtitles.nanookmod.entity.necroknight.lightning_beam",
+    "sounds": ["nanookmod:entity/necroknight/lightning_beam"]
+  },
+  "entity.necroknight.lightning_hit": {
+    "subtitle": "subtitles.nanookmod.entity.necroknight.lightning_hit",
+    "sounds": [
+      "nanookmod:entity/necroknight/lightning_hit_1",
+      "nanookmod:entity/necroknight/lightning_hit_2"
+    ]
+  }
+}

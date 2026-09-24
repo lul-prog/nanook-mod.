@@ -1,0 +1,20 @@
+{
+  "variants": {
+    "facing=south": {
+      "model": "nanookmod:block/ancient_banner",
+      "y": 0
+    },
+    "facing=west": {
+      "model": "nanookmod:block/ancient_banner",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "nanookmod:block/ancient_banner",
+      "y": 180
+    },
+    "facing=east": {
+      "model": "nanookmod:block/ancient_banner",
+      "y": 270
+    }
+  }
+}

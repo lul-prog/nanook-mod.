@@ -1,0 +1,6 @@
+{
+  "parent": "nanookmod:block/altar_necromante_model",
+  "textures": {
+    "1": "nanookmod:block/altar_necromante_body_bright"
+  }
+}

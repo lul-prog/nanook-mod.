@@ -1,0 +1,105 @@
+{
+	"format_version": "1.21.11",
+	"credit": "Made with Blockbench",
+	"texture_size": [16, 36.32117],
+	"textures": {
+		"0": "nanookmod:block/ancient_banner",
+		"particle": "nanookmod:block/ancient_banner"
+	},
+	"elements": [
+		{
+			"name": "Banderín",
+			"from": [0, 0, 1],
+			"to": [16, 32, 2],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-2, 31, 2]},
+			"faces": {
+				"north": {"uv": [0, 1.46302, 15.5, 15.55949], "texture": "#0"},
+				"east": {"uv": [13.5, 15.55949, 16, 16], "texture": "#0"},
+				"south": {"uv": [15.5, 1.46302, 0, 15.55949], "texture": "#0"},
+				"west": {"uv": [4, 15.55949, 16, 16], "texture": "#0"},
+				"up": {"uv": [14, 15.77974, 16, 16], "texture": "#0"},
+				"down": {"uv": [14, 15.55949, 16, 16], "texture": "#0"}
+			}
+		},
+		{
+			"name": "Banderín",
+			"from": [-1, 30, 0],
+			"to": [17, 32, 3],
+			"rotation": {"angle": 0, "axis": "y", "origin": [8, 30, 2]},
+			"faces": {
+				"north": {"uv": [0, 1.32154, 14, 1.76206], "texture": "#0"},
+				"east": {"uv": [0, 1.32154, 14, 1.76206], "texture": "#0"},
+				"south": {"uv": [0.5, 1.32154, 14.5, 1.76206], "texture": "#0"},
+				"west": {"uv": [0, 1.32154, 14, 1.76206], "texture": "#0"},
+				"up": {"uv": [0, 1.32154, 14, 1.76206], "texture": "#0"},
+				"down": {"uv": [0.5, 1.32154, 14.5, 1.76206], "texture": "#0"}
+			}
+		},
+		{
+			"from": [-2, 30, 0.5],
+			"to": [0, 32, 2.5],
+			"rotation": {"angle": 22.5, "axis": "x", "origin": [-1, 31, 1]},
+			"faces": {
+				"north": {"uv": [0, 0.14148, 2, 1.02251], "texture": "#0"},
+				"east": {"uv": [0, 0.14148, 2, 1.02251], "texture": "#0"},
+				"south": {"uv": [0, 0.14148, 2, 1.02251], "texture": "#0"},
+				"west": {"uv": [0, 0.14148, 2, 1.02251], "texture": "#0"},
+				"up": {"uv": [0, 0.22026, 2, 1.10129], "texture": "#0"},
+				"down": {"uv": [0, 0.22026, 2, 1.10129], "texture": "#0"}
+			}
+		},
+		{
+			"from": [16, 30, 0.5],
+			"to": [18, 32, 2.5],
+			"rotation": {"angle": 22.5, "axis": "x", "origin": [17, 31, 1]},
+			"faces": {
+				"north": {"uv": [0, 0, 2, 0.88103], "texture": "#0"},
+				"east": {"uv": [0, 0, 2, 0.88103], "texture": "#0"},
+				"south": {"uv": [0, 0, 2, 0.88103], "texture": "#0"},
+				"west": {"uv": [0, 0, 2, 0.88103], "texture": "#0"},
+				"up": {"uv": [0, 0, 2, 0.88103], "texture": "#0"},
+				"down": {"uv": [0, 0, 2, 0.88103], "texture": "#0"}
+			}
+		}
+	],
+	"display": {
+		"thirdperson_righthand": {
+			"scale": [0.32, 0.33, 0.32]
+		},
+		"thirdperson_lefthand": {
+			"scale": [0.32, 0.32, 0.32]
+		},
+		"firstperson_righthand": {
+			"rotation": [2, -57, 0],
+			"scale": [0.32, 0.32, 0.32]
+		},
+		"firstperson_lefthand": {
+			"rotation": [0, -57, 0],
+			"scale": [0.32, 0.32, 0.32]
+		},
+		"ground": {
+			"scale": [0.32, 0.32, 0.31]
+		},
+		"gui": {
+			"rotation": [26, -48, 0],
+			"translation": [0, -6, 0],
+			"scale": [0.66, 0.57, 0.58]
+		},
+		"fixed": {
+			"translation": [0, -4.5, 0],
+			"scale": [0.58, 0.46, 0.34]
+		},
+		"on_shelf": {
+			"translation": [0, -1.5, 0]
+		}
+	},
+	"groups": [
+		{
+			"name": "Banderín",
+			"origin": [0, 0, 1],
+			"scope": 0,
+			"color": 0,
+			"children": [0, 1, 2, 3]
+		}
+	]
+}

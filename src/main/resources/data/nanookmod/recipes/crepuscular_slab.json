@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "wooden_slabs",
+  "pattern": [
+    "###"
+  ],
+  "key": {
+    "#": { "item": "nanookmod:crepuscular_planks" }
+  },
+  "result": {
+    "item": "nanookmod:crepuscular_slab",
+    "count": 6
+  }
+}

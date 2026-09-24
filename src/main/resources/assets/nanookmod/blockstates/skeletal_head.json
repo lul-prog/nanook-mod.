@@ -1,0 +1,20 @@
+{
+  "variants": {
+    "facing=south": {
+      "model": "nanookmod:block/skeletal_head",
+      "y": 0
+    },
+    "facing=west": {
+      "model": "nanookmod:block/skeletal_head",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "nanookmod:block/skeletal_head",
+      "y": 180
+    },
+    "facing=east": {
+      "model": "nanookmod:block/skeletal_head",
+      "y": 270
+    }
+  }
+}

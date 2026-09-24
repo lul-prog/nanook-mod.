@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XSX",
+    "SXS",
+    "XSX"
+  ],
+  "key": {
+    "X": { "item": "minecraft:gunpowder" },
+    "S": { "item": "nanookmod:crepuscular_sand" }
+  },
+  "result": {
+    "item": "minecraft:tnt"
+  }
+}

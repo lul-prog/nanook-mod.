@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cross",
+  "render_type": "cutout",
+  "textures": {
+    "cross": "nanookmod:block/snowy_double_plant_fern_top"
+  }
+}

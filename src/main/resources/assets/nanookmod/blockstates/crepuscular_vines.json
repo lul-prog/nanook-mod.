@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "berries=false": { "model": "nanookmod:block/crepuscular_vines" },
+    "berries=true": { "model": "nanookmod:block/crepuscular_vines_lit" }
+  }
+}

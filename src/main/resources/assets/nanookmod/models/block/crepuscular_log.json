@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "nanookmod:block/crepuscular_log_top",
+    "side": "nanookmod:block/crepuscular_log"
+  }
+}

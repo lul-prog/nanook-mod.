@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "wooden_stairs",
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "key": {
+    "#": { "item": "nanookmod:crepuscular_planks" }
+  },
+  "result": {
+    "item": "nanookmod:crepuscular_stairs",
+    "count": 4
+  }
+}

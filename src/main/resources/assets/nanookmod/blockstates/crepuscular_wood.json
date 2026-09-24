@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "nanookmod:block/crepuscular_wood",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "nanookmod:block/crepuscular_wood"
+    },
+    "axis=z": {
+      "model": "nanookmod:block/crepuscular_wood",
+      "x": 90
+    }
+  }
+}

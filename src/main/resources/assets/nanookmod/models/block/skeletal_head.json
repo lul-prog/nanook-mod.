@@ -1,0 +1,8 @@
+{
+  "parent": "nanookmod:custom/skeletal_head",
+  "render_type": "cutout_mipped",
+  "textures": {
+    "0": "nanookmod:block/skeletal_head",
+    "particle": "nanookmod:block/skeletal_head"
+  }
+}

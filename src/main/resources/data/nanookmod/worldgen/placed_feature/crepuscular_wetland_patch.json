@@ -1,0 +1,7 @@
+{
+  "feature": "nanookmod:crepuscular_wetland_patch",
+  "placement": [
+    { "type": "minecraft:count", "count": 3 },
+    { "type": "minecraft:in_square" }
+  ]
+}

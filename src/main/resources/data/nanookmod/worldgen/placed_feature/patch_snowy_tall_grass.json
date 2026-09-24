@@ -1,0 +1,7 @@
+{
+  "feature": "nanookmod:patch_snowy_tall_grass",
+  "placement": [
+    { "type": "minecraft:rarity_filter", "chance": 2 },
+    { "type": "minecraft:in_square" }
+  ]
+}

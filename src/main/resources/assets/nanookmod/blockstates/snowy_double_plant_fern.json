@@ -1,0 +1,6 @@
+{
+  "variants": {
+    "half=lower": { "model": "nanookmod:block/snowy_double_plant_fern_bottom" },
+    "half=upper": { "model": "nanookmod:block/snowy_double_plant_fern_top" }
+  }
+}

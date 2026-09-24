@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "half=lower": {
+      "model": "nanookmod:block/crepuscular_reed_bottom"
+    },
+    "half=upper": {
+      "model": "nanookmod:block/crepuscular_reed_top"
+    }
+  }
+}

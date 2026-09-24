@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "planks",
+  "ingredients": [
+    {
+      "item": "nanookmod:crepuscular_wood"
+    }
+  ],
+  "result": {
+    "item": "nanookmod:crepuscular_planks",
+    "count": 4
+  }
+}

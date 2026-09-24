@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "nanookmod:crepuscular_stairs",
+    "nanookmod:crepuscular_slab",
+    "nanookmod:crepuscular_fence",
+    "nanookmod:crepuscular_fence_gate",
+    "nanookmod:crepuscular_button",
+    "nanookmod:crepuscular_pressure_plate"
+  ]
+}

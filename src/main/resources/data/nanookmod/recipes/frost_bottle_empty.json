@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "# #",
+    " # "
+  ],
+  "key": {
+    "#": { "item": "minecraft:tinted_glass" }
+  },
+  "result": {
+    "item": "nanookmod:frost_bottle_empty",
+    "count": 1
+  }
+}

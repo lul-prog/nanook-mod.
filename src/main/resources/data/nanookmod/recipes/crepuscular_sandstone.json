@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": { "item": "nanookmod:crepuscular_sand" }
+  },
+  "result": {
+    "item": "nanookmod:crepuscular_sandstone"
+  }
+}

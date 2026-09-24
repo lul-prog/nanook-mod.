@@ -1,0 +1,7 @@
+{
+  "type": "nanookmod:twisted_spruce_custom_feature",
+  "config": {
+    "structure": "nanookmod:twisted_spruce_custom",
+    "trunk_offset": [3, 0, 3]
+  }
+}

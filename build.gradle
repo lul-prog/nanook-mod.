@@ -1,0 +1,134 @@
+plugins {
+    id 'eclipse'
+    id 'idea'
+    id 'maven-publish'
+    id 'net.minecraftforge.gradle' version '[6.0,6.2)'
+    id 'org.spongepowered.mixin' version '0.7-SNAPSHOT'
+}
+
+version = '1.0.0'
+group = 'com.nanookmod'
+
+base {
+    archivesName = 'nanookmod'
+}
+
+java.toolchain.languageVersion = JavaLanguageVersion.of(17)
+
+println "Java: ${System.getProperty 'java.version'}, JVM: ${System.getProperty 'java.vm.version'} (${System.getProperty 'java.vendor'}), Arch: ${System.getProperty 'os.arch'}"
+
+minecraft {
+    mappings channel: 'official', version: '1.20.1'
+
+    runs {
+        client {
+            workingDirectory project.file('run')
+            property 'forge.logging.console.level', 'debug'
+            mods {
+                nanookmod {
+                    source sourceSets.main
+                }
+            }
+        }
+
+        server {
+            workingDirectory project.file('run')
+            property 'forge.logging.console.level', 'debug'
+            mods {
+                nanookmod {
+                    source sourceSets.main
+                }
+            }
+        }
+    }
+}
+
+sourceSets.main.resources { srcDir 'src/main/resources' }
+
+mixin {
+    add sourceSets.main, 'nanookmod.refmap.json'
+    // FALTABA esta línea: sin ella, Gradle nunca le avisa al entorno de desarrollo
+    // que debe REGISTRAR nanookmod.mixins.json (a diferencia de terrablender/geckolib,
+    // que llegan ya empaquetados como .jar con esto resuelto). Por esto ningún mixin
+    // del mod (ni el nuevo de diagnóstico, ni MixinSnowLayerBlock) se aplicaba nunca.
+    config "nanookmod.mixins.json"
+}
+
+repositories {
+    maven {
+        // Repositorio oficial de GeckoLib
+        url "https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/"
+        content {
+            includeGroup "software.bernie.geckolib"
+        }
+    }
+    maven {
+        url = "https://maven.minecraftforge.net/"
+    }
+    maven {
+        name = 'Glitchfiend Maven'
+        url = 'https://maven.glitchfiend.net/releases'
+    }
+    maven {
+        // CurseMaven: usado para traer AAA Particles (Effekseer loader, chloe_koopa)
+        name = 'CurseMaven'
+        url = 'https://cursemaven.com'
+        content {
+            includeGroup 'curse.maven'
+        }
+    }
+    maven {
+        // Modrinth Maven: usado SOLO para Architectury API (ver comentario en dependencies)
+        name = 'Modrinth'
+        url = 'https://api.modrinth.com/maven'
+        content {
+            includeGroup 'maven.modrinth'
+        }
+    }
+}
+
+dependencies {
+    minecraft 'net.minecraftforge:forge:1.20.1-47.2.0'
+
+    // GeckoLib: librería para animaciones custom
+    implementation fg.deobf('software.bernie.geckolib:geckolib-forge-1.20.1:4.4.5')
+
+    // TerraBlender: para biomas personalizados
+    implementation fg.deobf("com.github.glitchfiend:TerraBlender-forge:1.20.1-3.0.0.169")
+
+    // AAA Particles (chloe_koopa): loader de efectos Effekseer (.efkefc).
+    // File ID 6616719 = aaa_particles-1.20.1-1.4.11-forge.jar (última release estable para 1.20.1 Forge).
+    // Si querés otra versión, buscá el fileId en:
+    // https://www.curseforge.com/minecraft/mc-mods/aaa-particles/files/all?filter-game-version=1738749986%3A1.20.1
+    implementation fg.deobf("curse.maven:aaa-particles-979809:6616719")
+
+    // Architectury API: dependencia REQUERIDA por AAA Particles (su propio wiki lo pide
+    // explícito, ver https://github.com/ChloePrime/AAAParticles/wiki/How-To-Add-Particles).
+    // AAA Particles trae una copia de Architectury empaquetada por dentro (Jar-in-Jar), pero
+    // esa copia NO pasa por el pipeline de remapeo de ForgeGradle en el entorno de dev -- por
+    // eso el mixin architectury.mixins.json:MixinFallingBlockEntity revienta con
+    // "@Shadow field f_31946_ was not located" al arrancar runClient. Declarándola acá aparte
+    // (como cualquier otra dependencia normal, con fg.deobf) se remapea bien y el crash desaparece.
+    implementation fg.deobf("maven.modrinth:architectury-api:9.2.14+forge")
+}
+
+tasks.named('processResources', ProcessResources).configure {
+    duplicatesStrategy = DuplicatesStrategy.EXCLUDE
+    var replaceProperties = [
+            minecraft_version: '1.20.1',
+            minecraft_version_range: '[1.20.1,1.21)',
+            forge_version: '47.2.0',
+            forge_version_range: '[47,)',
+            loader_version_range: '[47,)',
+            mod_id: 'nanookmod',
+            mod_name: 'Nanook Mod',
+            mod_license: 'All Rights Reserved',
+            mod_version: project.version,
+            mod_authors: 'Tu Nombre',
+            mod_description: 'Mod de criaturas, jefes, minerales y equipo para la serie.',
+    ]
+    inputs.properties replaceProperties
+    filesMatching(['META-INF/mods.toml']) {
+        expand replaceProperties + [project: project]
+    }
+}

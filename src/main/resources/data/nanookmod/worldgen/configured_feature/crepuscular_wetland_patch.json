@@ -1,0 +1,12 @@
+{
+  "type": "nanookmod:crepuscular_patch_feature",
+  "config": {
+    "to_place": {
+      "type": "minecraft:weighted_state_provider",
+      "entries": [
+        { "data": { "Name": "nanookmod:crepuscular_reed" }, "weight": 2 },
+        { "data": { "Name": "nanookmod:crepuscular_mire_bloom" }, "weight": 2 }
+      ]
+    }
+  }
+}

@@ -1,0 +1,62 @@
+{
+	"format_version": "1.21.11",
+	"credit": "Made with Blockbench",
+	"texture_size": [64, 64],
+	"textures": {
+		"0": "nanookmod:item/necro_ball",
+		"particle": "nanookmod:item/necro_ball"
+	},
+	"elements": [
+		{
+			"name": "left_arm_outline",
+			"from": [12.332, 15.332, 12.332],
+			"to": [3.668, 6.668, 3.668],
+			"rotation": {"angle": 0, "axis": "y", "origin": [19.4, -12.94, 8]},
+			"faces": {
+				"north": {"uv": [15.75, 15.75, 16, 16], "rotation": 180, "texture": "#0"},
+				"east": {"uv": [15.75, 15.75, 16, 16], "rotation": 180, "texture": "#0"},
+				"south": {"uv": [15.75, 15.75, 16, 16], "rotation": 180, "texture": "#0"},
+				"west": {"uv": [15.75, 15.75, 16, 16], "rotation": 180, "texture": "#0"},
+				"up": {"uv": [15.75, 15.75, 16, 16], "rotation": 180, "texture": "#0"},
+				"down": {"uv": [15.75, 15.75, 16, 16], "rotation": 180, "texture": "#0"}
+			}
+		},
+		{
+			"name": "left_arm_outline",
+			"from": [13.244, 16.244, 13.244],
+			"to": [2.756, 5.756, 2.756],
+			"rotation": {"angle": 0, "axis": "y", "origin": [19.4, -12.94, 8]},
+			"faces": {
+				"north": {"uv": [15.5, 15.75, 15.75, 16], "rotation": 180, "texture": "#0"},
+				"east": {"uv": [15.5, 15.75, 15.75, 16], "rotation": 180, "texture": "#0"},
+				"south": {"uv": [15.5, 15.75, 15.75, 16], "rotation": 180, "texture": "#0"},
+				"west": {"uv": [15.5, 15.75, 15.75, 16], "rotation": 180, "texture": "#0"},
+				"up": {"uv": [15.5, 15.75, 15.75, 16], "rotation": 180, "texture": "#0"},
+				"down": {"uv": [15.5, 15.75, 15.75, 16], "rotation": 180, "texture": "#0"}
+			}
+		},
+		{
+			"name": "left_arm_outline",
+			"from": [14.156, 17.156, 14.156],
+			"to": [1.844, 4.844, 1.844],
+			"rotation": {"angle": 0, "axis": "y", "origin": [19.4, -12.94, 8]},
+			"faces": {
+				"north": {"uv": [15.25, 15.775, 15.5, 16], "rotation": 180, "texture": "#0"},
+				"east": {"uv": [15.25, 15.775, 15.5, 16], "rotation": 180, "texture": "#0"},
+				"south": {"uv": [15.25, 15.775, 15.5, 16], "rotation": 180, "texture": "#0"},
+				"west": {"uv": [15.25, 15.775, 15.5, 16], "rotation": 180, "texture": "#0"},
+				"up": {"uv": [15.25, 15.775, 15.5, 16], "rotation": 180, "texture": "#0"},
+				"down": {"uv": [15.25, 15.775, 15.5, 16], "rotation": 180, "texture": "#0"}
+			}
+		}
+	],
+	"groups": [
+		{
+			"name": "h_efball",
+			"origin": [8, 11, 8],
+			"scope": 0,
+			"color": 0,
+			"children": [0, 1, 2]
+		}
+	]
+}

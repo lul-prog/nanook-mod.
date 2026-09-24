@@ -1,0 +1,18 @@
+{
+  "type": "forge:add_spawns",
+  "biomes": "#minecraft:is_overworld",
+  "spawners": [
+    {
+      "type": "nanookmod:skeletal_warrior",
+      "weight": 7,
+      "minCount": 1,
+      "maxCount": 1
+    },
+    {
+      "type": "nanookmod:skeletal_mage",
+      "weight": 6,
+      "minCount": 1,
+      "maxCount": 1
+    }
+  ]
+}

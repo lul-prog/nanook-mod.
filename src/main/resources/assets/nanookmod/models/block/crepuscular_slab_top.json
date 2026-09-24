@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "nanookmod:block/crepuscular_planks",
+    "top": "nanookmod:block/crepuscular_planks",
+    "side": "nanookmod:block/crepuscular_planks"
+  }
+}

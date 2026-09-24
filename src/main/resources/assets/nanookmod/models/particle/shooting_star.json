@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:particle",
+  "textures": {
+    "particle": "nanookmod:particle/shooting_star"
+  }
+}

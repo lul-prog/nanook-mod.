@@ -1,0 +1,56 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"skill": {
+			"animation_length": 4.0417,
+			"bones": {
+				"body": {
+					"scale": {
+						"0.0": {
+							"vector": [0, 0, 0]
+						},
+						"0.2083": {
+							"vector": [1.1, 1.1, 1.1]
+						}
+					}
+				}
+			}
+		},
+		"death": {
+			"animation_length": 0.5417,
+			"override_previous_animation": true,
+			"bones": {
+				"body": {
+					"scale": {
+						"0.0": {
+							"vector": [1.1, 1.1, 1.1]
+						},
+						"0.4167": {
+							"vector": [0, 0, 0]
+						}
+					}
+				}
+			}
+		},
+		"skill2": {
+			"animation_length": 3.4167,
+			"bones": {
+				"body": {
+					"scale": {
+						"vector": [0.8, 0.8, 0.8]
+					}
+				}
+			}
+		},
+		"skill3": {
+			"animation_length": 3.4167,
+			"bones": {
+				"body": {
+					"scale": {
+						"vector": [0.7, 0.8, 0.7]
+					}
+				}
+			}
+		}
+	}
+}

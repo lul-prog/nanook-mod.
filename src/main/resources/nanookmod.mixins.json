@@ -1,0 +1,21 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.nanookmod.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "refmap": "nanookmod.refmap.json",
+  "mixins": [
+    "MixinSnowLayerBlock"
+  ],
+  "client": [
+    "MixinFrostedMoon",
+    "MixinFrostedSky",
+    "MixinLightTexture",
+    "MixinEffectRenderingInventoryScreen",
+    "MixinMouseHandler",
+    "MixinFasterClouds"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

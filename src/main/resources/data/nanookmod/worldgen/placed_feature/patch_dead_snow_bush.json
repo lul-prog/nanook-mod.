@@ -1,0 +1,7 @@
+{
+  "feature": "nanookmod:patch_dead_snow_bush",
+  "placement": [
+    { "type": "minecraft:rarity_filter", "chance": 30 },
+    { "type": "minecraft:in_square" }
+  ]
+}
